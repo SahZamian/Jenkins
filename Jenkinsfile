@@ -2,24 +2,25 @@ pipeline {
     agent any
     stages {
         stage('Build') {
-        steps {
             steps {
-                echo "Compilando..."
+                steps {
+                    echo "Compilando..."
+                }
             }
-        }
 
-        stage('Test'){
-            steps{
-                echo "Rodando testes..."
+            stage('Test'){
+                steps{
+                    echo "Rodando testes..."
+                }
             }
-        }
 
-        stage('Deploy'){
-            steps{
-                echo "Deploy realizado com sucesso!!!!"
+            stage('Deploy'){
+                steps{
+                    echo "Deploy realizado com sucesso!!!!"
+                }
             }
-        }
+
+        }   
 
     }
-
 }
